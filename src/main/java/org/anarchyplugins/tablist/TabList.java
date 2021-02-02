@@ -6,10 +6,10 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
-public class Tablist implements Runnable {
+public class TabList implements Runnable {
     TabListMain pl;
 
-    public Tablist(TabListMain pl) {
+    public TabList(TabListMain pl) {
         this.pl = pl;
     }
 
@@ -22,8 +22,8 @@ public class Tablist implements Runnable {
             for (Player player : Bukkit.getOnlinePlayers()) {
                 StringBuilder head = new StringBuilder();
                 StringBuilder footer = new StringBuilder();
-                List<String> headerlist = pl.getConfig().getStringList("tablist.header");
-                List<String> footerlist = pl.getConfig().getStringList("tablist.footer");
+                List<String> headerlist = pl.getConfig().getStringList("header");
+                List<String> footerlist = pl.getConfig().getStringList("footer");
 
                 for (int i = 0; i < headerlist.size(); i++) {
                     if (i == (headerlist.size() - 1)) {

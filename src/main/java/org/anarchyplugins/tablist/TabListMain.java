@@ -21,16 +21,16 @@ public class TabListMain extends JavaPlugin implements Listener {
         saveDefaultConfig();
 
         starttime = System.currentTimeMillis();
-        this.getCommand("tabrconfig").setExecutor(new ReloadCommand(this));
-        Bukkit.getScheduler().runTaskTimer(this, new Tablist(this), 0, 10L);
+        this.getCommand("tabreload").setExecutor(new ReloadCommand(this));
+        Bukkit.getScheduler().runTaskTimer(this, new TabList(this), 0, 10L);
 
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             haspapi = true;
         }
 
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Tablist(this), 0, 20);
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new TabList(this), 0, 20);
 
-        log.info("XeraTablist enabled");
+        log.info("TabList enabled");
     }
 
     public static String parseText(Player player, String text) throws NoSuchFieldException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {

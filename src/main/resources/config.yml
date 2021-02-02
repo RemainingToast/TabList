@@ -1,11 +1,10 @@
 # It's recommended to change "SERVERNAME" to your servers name
-tablist:
-  header:
-    - ""
-    - "&7&l&o    SERVER"
-    - "&7&l&oNAME"
-    - ""
-  footer:
-    - ""
-    - " &a%tps% &3TPS — &a%players% &3Online — &a%ping%ms &3Ping — &a%uptime% &3Uptime "
-    - ""
+header:
+  - ""
+  - "&7&l&o    SERVER"
+  - "&7&l&oNAME"
+  - ""
+footer:
+  - ""
+  - " &a%tps% &3TPS — &a%players% &3Online — &a%ping%ms &3Ping — &a%uptime% &3Uptime "
+  - ""

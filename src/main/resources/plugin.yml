@@ -5,6 +5,6 @@ authors: [Nate Legault, Pistonmaster, RemainingToast]
 description: ${project.description}
 softdepend: [PlaceholderAPI]
 commands:
-  tabrconfig:
-    description: Reload the config
-    usage: /tabrconfig
+  tabreload:
+    description: Reload TAB
+    usage: /tabreload
