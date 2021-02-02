@@ -15,12 +15,12 @@ public class ReloadCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
             pl.reloadConfig();
-            sender.sendMessage("Reloaded Config");
+            sender.sendMessage("&aReloaded Config");
         }
 
         if (sender instanceof Player && sender.isOp()) {
             pl.reloadConfig();
-            sender.sendMessage("Reloaded Config");
+            sender.sendMessage("&aReloaded Config");
         }
 
         return true;
