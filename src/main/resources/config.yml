@@ -1,18 +1,19 @@
-# It's recommended to change every "XeraTalist" to your servers name
+# It's recommended to change "SERVERNAME" to your servers name and change websites and contacts.
 
 tablist:
   header:
     - ""
-    - "&4Xera&3Tablist"
+    - "&7&l&oSERVER"
+    - "&7&l&oNAME"
     - ""
-    - "&6This the default Tablist for XeraTablist"
+    - "&6This the default config for TabList"
     - ""
   footer:
     - ""
     - "&3%tps% tps — %players% players — %ping% ping — %uptime% uptime"
     - ""
-    - "&7contact: Leee#2021"
-    - "&7discussion: https://discord.gg/KgrrEQr"
-    - "&7website: xera.ca"
-    - "&7these are the only official xera websites and contacts."
+    - "&7contact: Discord#1111"
+    - "&7discussion: https://discord.gg/"
+    - "&7website: github.com/AnarchyPlugins"
+    - "&7these are the only official default websites and contacts."
     - ""

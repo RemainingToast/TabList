@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Xera.Tablist</groupId>
-    <artifactId>XeraTablist</artifactId>
-    <version>1.1.1</version>
+    <groupId>org.anarchyplugins.TabList</groupId>
+    <artifactId>TabListMain</artifactId>
+    <version>1.1.2</version>
     <packaging>jar</packaging>
 
-    <name>XeraTablist</name>
+    <name>TabList</name>
 
-    <description>Most advanced tablist plugin for anarchy servers out there!</description>
+    <description>TabList plugin designed for anarchy servers.</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

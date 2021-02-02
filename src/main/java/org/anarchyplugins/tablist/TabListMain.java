@@ -1,4 +1,4 @@
-package Xera.Tablist;
+package org.anarchyplugins.tablist;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.lang.reflect.InvocationTargetException;
 import java.util.logging.Logger;
 
-public class XeraTablist extends JavaPlugin implements Listener {
+public class TabListMain extends JavaPlugin implements Listener {
     public static long starttime;
     public static boolean haspapi = false;
 
@@ -50,7 +50,7 @@ public class XeraTablist extends JavaPlugin implements Listener {
         newtext = newtext
                 .replaceAll("%tps%", TabUtil.getTps())
                 .replaceAll("%ping%", String.valueOf(ping))
-                .replaceAll("%uptime%", TabUtil.GetFormattedInterval(System.currentTimeMillis() - XeraTablist.starttime))
+                .replaceAll("%uptime%", TabUtil.GetFormattedInterval(System.currentTimeMillis() - TabListMain.starttime))
                 .replaceAll("%players%", Integer.toString(Bukkit.getServer().getOnlinePlayers().size()));
 
         return newtext;

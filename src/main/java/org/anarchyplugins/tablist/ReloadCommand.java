@@ -1,4 +1,4 @@
-package Xera.Tablist;
+package org.anarchyplugins.tablist;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -7,19 +7,19 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 public class ReloadCommand implements CommandExecutor {
-    XeraTablist xeraTablist;
-    public ReloadCommand(XeraTablist xeraTablist) {
-        this.xeraTablist = xeraTablist;
+    TabListMain pl;
+    public ReloadCommand(TabListMain pl) {
+        this.pl = pl;
     }
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
-            xeraTablist.reloadConfig();
+            pl.reloadConfig();
             sender.sendMessage("Reloaded Config");
         }
 
         if (sender instanceof Player && sender.isOp()) {
-            xeraTablist.reloadConfig();
+            pl.reloadConfig();
             sender.sendMessage("Reloaded Config");
         }
 

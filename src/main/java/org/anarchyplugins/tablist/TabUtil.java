@@ -1,4 +1,4 @@
-package Xera.Tablist;
+package org.anarchyplugins.tablist;
 
 import org.bukkit.Bukkit;
 
