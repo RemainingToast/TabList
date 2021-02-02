@@ -1,7 +1,7 @@
-name: XeraTablist
+name: TabList
 version: ${project.version}
-main: Xera.Tablist.XeraTablist
-authors: [Nate Legault, Pistonmaster]
+main: org.anarchyplugins.tablist.TabListMain
+authors: [Nate Legault, Pistonmaster, RemainingToast]
 description: ${project.description}
 softdepend: [PlaceholderAPI]
 commands:
