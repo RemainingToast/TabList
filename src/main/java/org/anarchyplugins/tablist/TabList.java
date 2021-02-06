@@ -41,7 +41,7 @@ public class TabList implements Runnable {
                     }
                 }
 
-                player.setPlayerListHeaderFooter(new ComponentBuilder(TabListMain.parseText(player, head.toString())).create(), new ComponentBuilder(TabListMain.parseText(player, footer.toString())).create());
+                player.setPlayerListHeaderFooter(new ComponentBuilder(TabListMain.INSTANCE.parseText(player, head.toString())).create(), new ComponentBuilder(TabListMain.INSTANCE.parseText(player, footer.toString())).create());
             }
         } catch (Exception e) {
             e.printStackTrace();

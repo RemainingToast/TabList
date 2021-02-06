@@ -2,9 +2,14 @@
 header:
   - ""
   - "&7&l&o    SERVER"
-  - "&7&l&oNAME"
+  - "&7&l&oNAME&r"
+  - ""
+  - "%announcement%"
   - ""
 footer:
   - ""
   - " &a%tps% &3TPS — &a%players% &3Online — &a%ping%ms &3Ping — &a%uptime% &3Uptime "
   - ""
+announcements: # Sets ANNOUNCEMENT to one of these onEnable, add %announcement% to your TabList to make it appear
+  - "&6Added Random Announcement Feature!"
+  - "&6TabList by AnarchyPlugins"

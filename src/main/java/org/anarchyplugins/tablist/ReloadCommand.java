@@ -15,11 +15,13 @@ public class ReloadCommand implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
+            pl.saveDefaultConfig();
             pl.reloadConfig();
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aReloaded Config"));
         }
 
         if (sender instanceof Player && sender.isOp()) {
+            pl.saveDefaultConfig();
             pl.reloadConfig();
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aReloaded Config"));
         }
