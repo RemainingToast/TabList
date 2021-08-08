@@ -1,14 +1,32 @@
 package org.anarchyplugins.tablist;
 
+import net.md_5.bungee.api.ChatColor;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 
 public class TabUtil {
-    private static String format(double tps) {
-        return (tps > 18.0D ? "§a" : (tps > 16.0D ? "§e" : "§c")) + (tps > 20.0D ? "" : "") + String.format("%.2f", Math.min((double) Math.round(tps * 100.0D) / 100.0D, 20.0D));
+
+    public static TextComponent formatTps(double tps) {
+        ChatColor color;
+        if (tps > 16.0) {
+            color = ChatColor.GREEN;
+        } else if (tps > 10.0) {
+            color = ChatColor.YELLOW;
+        } else {
+            color = ChatColor.RED;
+        }
+
+        double roundedTps = Math.min(Math.round(tps * 100.0) / 100.0, 20.0);
+        String tpsString = (tps > 20.0 ? "*" : "") + (roundedTps > 19.75 ? 20.0 : roundedTps);
+
+        TextComponent text = new TextComponent(tpsString);
+        text.setColor(color);
+
+        return text;
     }
 
-    public static String getTps() {
-        return format(Bukkit.getServer().getTPS()[0]);
+    public static TextComponent getTps() {
+        return formatTps(Bukkit.getServer().getTPS()[0]);
     }
 
     public static String GetFormattedInterval(long ms) {

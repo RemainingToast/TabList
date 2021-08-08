@@ -30,6 +30,7 @@ public class TabListMain extends JavaPlugin implements Listener {
 
         starttime = System.currentTimeMillis();
         this.getCommand("tabreload").setExecutor(new ReloadCommand(this));
+
         Bukkit.getScheduler().runTaskTimer(this, new TabList(this), 0, 10L);
 
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
@@ -56,7 +57,7 @@ public class TabListMain extends JavaPlugin implements Listener {
 
         // Custom Placeholders
         newtext = newtext
-                .replaceAll("%tps%", TabUtil.getTps())
+                .replaceAll("%tps%", TabUtil.getTps().toLegacyText())
                 .replaceAll("%ping%", String.valueOf(ping))
                 .replaceAll("%uptime%", TabUtil.GetFormattedInterval(System.currentTimeMillis() - TabListMain.starttime))
                 .replaceAll("%players%", Integer.toString(Bukkit.getServer().getOnlinePlayers().size()));
